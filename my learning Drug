@@ -1,1 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+    <title>情報学特講前期</title>
+ <link rel="stylesheet" href="mystyle.css"> <!--この行を追加-->
+    <script src="myjs.js"></script>
+</head>
+   <body>
+          <h1>概要</h1>
+          　<h2>ここでは私が学んでいる薬の成分について、記載されています</h2>
+           <h2>表示されている成分をクリックすると、それについて説明されているリンクに飛びます</h2>
+          
+          
+          
+          
+          
+          
+          
+          
+   </body>
+</html>
