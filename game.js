@@ -1,17 +1,25 @@
-// スイカの要素を取得
-var watermelon = document.getElementById("watermelon");
+// ランダムな数字を生成
+var targetNumber = Math.floor(Math.random() * 10) + 1;
 
-// 割るボタンの要素を取得
-var smashButton = document.getElementById("smash-button");
+// 必要な要素を取得
+var guessInput = document.getElementById("guess-input");
+var guessButton = document.getElementById("guess-button");
+var result = document.getElementById("result");
 
-// 割るボタンがクリックされたときの処理を設定
-smashButton.addEventListener("click", function() {
-  // スイカの画像を割れた状態に変更
-  watermelon.src = "smashed_watermelon.png";
-  
-  // 割るボタンを無効化
-  smashButton.disabled = true;
-  
-  // メッセージを表示
-  alert("スイカを割りました！");
+// 答えるボタンがクリックされたときの処理を設定
+guessButton.addEventListener("click", function() {
+  // 入力された値を取得
+  var guess = parseInt(guessInput.value);
+
+  // 答えを判定して結果を表示
+  if (guess === targetNumber) {
+    result.textContent = "正解です！おめでとうございます！";
+  } else if (guess < targetNumber) {
+    result.textContent = "もっと大きな数です。";
+  } else {
+    result.textContent = "もっと小さな数です。";
+  }
+
+  // 入力欄をクリア
+  guessInput.value = "";
 });
