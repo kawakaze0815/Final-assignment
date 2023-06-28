@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>スイカ割りゲーム</title>
-<style>
-  #game-area {
-    text-align: center;
-  }
-  
-  #watermelon {
-    width: 300px;
-    height: 300px;
-  }
-</style>
-
+  <title>数字当てゲーム</title>
+  <style>
+    /* CSS スタイルを設定 */
+  </style>
 </head>
-  
 <body>
-  
-  <h1>スイカ割りゲーム</h1>
-  <div id="game-area">
-    <img src="watermelon.png" id="watermelon" alt="スイカの画像">
-    <button id="smash-button">割る</button>
-  </div>
+  <h1>数字当てゲーム</h1>
+  <p>1から10までの数字を当ててください。</p>
+  <input type="number" id="guess-input">
+  <button id="guess-button">答える</button>
+  <p id="result"></p>
 
   <script src="game.js"></script>
-  
 </body>
 </html>
+
