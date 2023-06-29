@@ -1,3 +1,35 @@
-h1 { color: #FF0000 ; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
 
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ol {
+    font-size: 16px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin-top: 20px;
+}
